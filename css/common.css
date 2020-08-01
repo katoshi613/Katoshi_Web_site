@@ -1,0 +1,50 @@
+
+
+/* ヘッダー部分 */
+
+header {
+  width: 100%;
+  height: 90px;
+  box-shadow: 4px 10px 20px black;
+  z-index: 10;
+}
+
+/* ヘッダー部分　終わり */
+
+
+
+div.header_logo {
+  width: 100%;
+  height: 100%;
+  background:linear-gradient(to left ,#FAFFFE 0%,#DEFEF6 20%, #49FCCC 50%, #35A9A1 100%);
+}
+
+div.header_logo a {
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #f3f3f3;
+  font-size: 1.7rem;
+  font-family: "Homemade Apple",cursive;
+  font-weight: lighter;
+  letter-spacing: 1.5px;
+  line-height: 90px;
+  text-decoration: none;
+  padding-left: 25px;
+}
+
+div.header_logo h2 {
+  margin: 0;
+}
+
+/* フッター部分 */
+footer {
+  width: 100%;
+  z-index: 10;
+  height: 160px;
+  background: linear-gradient( #FAFFFE 0%, #DEFEF6 20%, #49FCCC 50%,#35A9A1 100%);
+  box-shadow: 0 -8px 40px black;
+}
+
+/* フッター部分　終わり */

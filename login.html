@@ -4,22 +4,75 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>タイトル | サイト名</title>
+  <title>掲示板 | かとしの部屋</title>
   <meta name="description" content="ディスクリプション" />
+  <link rel="stylesheet" href="css/sanitize.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" type="text/css" href="/css/login.css">
+  <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet">
 
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="タイトル" />
-  <meta property="og:image" content="/img/icon.png" />
-  <meta property="og:url" content="http://example.net/" />
-  <meta property="og:site_name" content="サイト名" />
-  <meta property="og:description" content="ディスクリプション" />
-
-  <meta name="robots" content="noarchive">
-
-  <link rel="shortcut icon" href="/img/favicon.ico">
-  <link rel="stylesheet" type="text/css" href="/css/main.css">
 </head>
 <body>
-  内容
+  <!-- ヘッダー部分 -->
+  <header>
+    <div class="header_logo">
+
+
+      <h2><a href="#">katoshi's room</a></h2>
+
+
+    </div>
+  </header>
+  <!-- メイン部分（ログインフォーム） -->
+  <div class="main">
+
+    <main>
+
+      <div class="login_form">
+        <h2>Sign In</h2>
+
+
+        <form action="get">
+
+          <!-- メールアドレス入力 -->
+          <div>
+            <div class="label_space">
+              <label id="mail_address" for="my_mail">mail address</label>
+            </div>
+            <input type="text" name="my_mail" id="my_mail" max-length="255">
+          </div>
+          </br>
+          <div>
+            <div class="label_space">
+              <label id="password" for="my_password">password</label>
+            </div>
+            <input type="text" name="my_password" id="my_password" maxlength="255">
+          </div>
+        </br>
+        </br>
+
+          <input id="btn" type="submit" value="送信">
+
+
+        </form>
+        </br>
+        </br>
+        </br>
+
+
+      </div>
+
+    </main>
+
+  </div>
+  <!-- フッター部分 -->
+  <footer>
+
+  </footer>
+
+
+
 </body>
+
 </html>

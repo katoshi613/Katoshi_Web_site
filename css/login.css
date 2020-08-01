@@ -1,32 +1,89 @@
-@charset "UTF-8";
 
-@import url(/css/sanitize.css);
-@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 
-.clearfix:after {
-  content: ".";
+div.main{
   display: block;
-  clear: both;
-  height: 0;
-  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255,255, 255, .3);
+  background: url(/img/mountain.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
 }
 
-html {
-  font-size: 62.5%;
+/* ログインフォーム */
+main {
+  width: 100%;
+  height: 100%;
+  padding: 200px 0;
+
 }
 
-body {
-  font-family: 'Noto Sans Japanese', serif;
-  font-size: 1.2rem;
-  width: 640px;
+
+div.login_form {
+  z-index: 10;
+  background-color: rgba(9,43,44, .8);
+  width: 40%;
+  height: 100%;
   margin: 0 auto;
-  padding: 0;
-  background-color: #EEEEEE;
+  border-radius: 7px;
+  box-shadow: 0px 10px 10px 3px darkslategrey ;
 }
-*, *::before, *::after {
-  box-sizing: border-box;
+
+div.login_form h2 {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 30px 10px 15px;
+  font-size: 1.8rem;
+  line-height: 40px;
+  font-family: "Caveat";
+  color: #F3F3F3;
 }
-a:link, a:visited, a:hover, a:active {
-  color: #0000ff;
-  text-decoration: none;
+
+form {
+  width: 60%;
+  height: 100%;
+  margin: 0 auto;
+  color: #F3F3F3;
+
 }
+
+/* メールアドレス入力 */
+input#my_mail {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+/* パスワード入力 */
+input#my_password {
+  width: 100%;
+  height: 100%;
+}
+
+input#btn {
+  width: 100%;
+  height: 100%;
+  background-color: #49FCCC;
+}
+
+/* ラベルタグ用スペース */
+.label_space {
+  display: block;
+}
+
+
+/* アニメーション実装 */
+
+div.login_form h2:hover {
+  animation:3s linear infinite rotation1;
+}
+
+@keyframes rotation1{
+  0%{ transform:rotateX(0);}
+  100%{ transform:rotateX(360deg); }
+}
+/* アニメーション実装　終わり */
